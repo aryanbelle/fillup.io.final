@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import dbConnect from "@/app/lib/dbConnect";
-import CreatorForm from "@/app/models/creatorForm";
+import CreatorForm from "@/app/models/CreatorForm";
 import { decrypt } from "@/app/lib/crypto";
 
 export async function PUT(

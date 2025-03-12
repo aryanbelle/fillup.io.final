@@ -1,7 +1,7 @@
 import dbConnect from "@/app/lib/dbConnect";
 import { NextRequest, NextResponse } from "next/server";
 import { currentUser } from "@clerk/nextjs/server";
-import CreatorForm from "@/app/models/creatorForm";
+import CreatorForm from "@/app/models/CreatorForm";
 
 export async function POST(req: NextRequest) {
   try {
