@@ -1,8 +1,8 @@
 import dbConnect from "@/app/lib/dbConnect";
 import { NextRequest, NextResponse } from "next/server";
 import { currentUser } from "@clerk/nextjs/server";
-import {UserFormResponse} from "@/app/models/UserFormResponse";
-import CreatorForm from "@/app/models/CreatorForm";
+import UserFormResponse from "../../../models/UserFormResponse";
+import CreatorForm from "../../../models/CreatorForm";
 import { decrypt } from "@/app/lib/crypto";
 
 export async function POST(

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import dbConnect from "@/app/lib/dbConnect";
-import UserFormResponse from "@/app/models/UserFormResponse";
+import UserFormResponse from "../../../models/UserFormResponse";
 
 export async function GET(req: NextRequest, { params }: { params: { responseid: string } }) {
     try {

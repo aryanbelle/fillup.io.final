@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import CreatorForm from "@/app/models/CreatorForm";
+import CreatorForm from "../../../models/CreatorForm";
 import dbConnect from "@/app/lib/dbConnect";
 import { decrypt } from "@/app/lib/crypto";
 
