@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import dbConnect from "@/app/lib/dbConnect";
-import {CreatorForm} from "@/app/models/creatorForm";
+import CreatorForm from "@/app/models/creatorForm";
 import { encrypt } from "@/app/lib/crypto";
 import { currentUser } from "@clerk/nextjs/server";
 
