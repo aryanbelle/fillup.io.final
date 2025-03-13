@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "buildCommand": "cd fillup-io && npm install && npm run vercel-build",
+  "outputDirectory": "fillup-io/.next",
+  "framework": "nextjs",
+  "cleanUrls": true,
+  "env": {
+    "GEMINI_API_KEY": "AIzaSyBRJOPod0vYYvpriJEs2Vh-7skmAyQ86-s",
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_aW5jbHVkZWQtc2hlZXBkb2ctNjYuY2xlcmsuYWNjb3VudHMuZGV2JA",
+    "CLERK_SECRET_KEY": "sk_test_85MxIqGiQYF04b1DvOuntzJsyrFi1oD6Rys7SyJsXz",
+    "NEXT_PUBLIC_CLERK_SIGN_IN_URL": "/signin",
+    "NEXT_PUBLIC_CLERK_SIGN_UP_URL": "/signup",
+    "MONGODB_URI": "mongodb+srv://aryanbelle692:B4egvv2EzUZ1S4YH@cluster0.x0bshzs.mongodb.net/",
+    "CLOUDINARY_CLOUD_NAME": "duxmr7b7o",
+    "CLOUDINARY_API_KEY": "741244285469114",
+    "CLOUDINARY_API_SECRET": "vKSxuEJtm4zdF5-vVqkggIRZrVA"
+  }
+} 

@@ -10,5 +10,5 @@ export default async function RootPage() {
   }
   
   // If user is signed in, redirect to the dashboard
-  redirect("/dashboard");
+  redirect("/main/dashboard");
 } 
