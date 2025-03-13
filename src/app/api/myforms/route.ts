@@ -1,9 +1,10 @@
 import { NextResponse } from "next/server";
 import dbConnect from "@/app/lib/dbConnect";
 // import CreatorForm from "@/app/models/CreatorForm";
-import CreatorForm from "@/app/models/creatorForm";
+import CreatorForm, { ICreatorForm } from "@/app/models/creatorForm";
 import { encrypt } from "@/app/lib/crypto";
 import { currentUser } from "@clerk/nextjs/server";
+
 export async function GET() {
   try {
     await dbConnect();
