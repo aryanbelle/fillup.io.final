@@ -1,7 +1,7 @@
 import { decrypt } from "@/app/lib/crypto";
 import dbConnect from "@/app/lib/dbConnect";
-import CreatorForm from "../../models/CreatorForm";
-import userFormResponse from "../../models/UserFormResponse";
+import CreatorForm from "@/app/models/creatorForm";
+import userFormResponse from "@/app/models/userFormResponse";
 import { currentUser } from "@clerk/nextjs/server";
 import { NextRequest, NextResponse } from "next/server";
 

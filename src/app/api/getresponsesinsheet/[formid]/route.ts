@@ -1,11 +1,11 @@
 import dbConnect from "@/app/lib/dbConnect";
-import UserFormResponse from "../../../models/UserFormResponse";
+import UserFormResponse from "@/app/models/userFormResponse";
 import { NextRequest, NextResponse } from "next/server";
 import * as XLSX from "xlsx";
 import cloudinary from "cloudinary";
 import { Readable } from "stream";
 import { decrypt } from "@/app/lib/crypto";
-import CreatorForm from "../../../models/CreatorForm";
+import CreatorForm from "@/app/models/creatorForm";
 import { clerkClient } from "@clerk/nextjs/server";
 
 // Configure Cloudinary
