@@ -1,21 +1,17 @@
-import { execSync } from 'child_process';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+// This is a simple script that doesn't use ES modules or CommonJS syntax
+// It's designed to be compatible with any JavaScript environment
 
-// Get the current directory
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+// Use the native fs module
+const fs = globalThis.require ? require('fs') : await import('fs');
+const path = globalThis.require ? require('path') : await import('path');
 
-// Run the Next.js build
-console.log('Running Next.js build...');
-try {
-  // We're not running the build here since it's already run in the package.json script
-  // execSync('next build', { stdio: 'inherit' });
-  console.log('Build already executed via package.json script');
-} catch (error) {
-  console.error('Build failed, but continuing with fixes...');
+// Helper functions that work in both environments
+function join(...parts) {
+  return globalThis.require ? path.join(...parts) : path.join(...parts);
+}
+
+function dirname(p) {
+  return globalThis.require ? path.dirname(p) : path.dirname(p);
 }
 
 // Check if the problematic directory exists

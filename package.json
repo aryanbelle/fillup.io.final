@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node vercel-build.mjs",
+    "build": "next build",
+    "postbuild": "node build.js",
     "start": "next start",
     "lint": "next lint"
   },
