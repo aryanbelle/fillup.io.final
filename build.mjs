@@ -1,18 +1,11 @@
-// This is a simple script that doesn't use ES modules or CommonJS syntax
-// It's designed to be compatible with any JavaScript environment
+// Pure ES module syntax
+import fs from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 
-// Use the native fs module
-const fs = globalThis.require ? require('fs') : await import('fs');
-const path = globalThis.require ? require('path') : await import('path');
-
-// Helper functions that work in both environments
-function join(...parts) {
-  return globalThis.require ? path.join(...parts) : path.join(...parts);
-}
-
-function dirname(p) {
-  return globalThis.require ? path.dirname(p) : path.dirname(p);
-}
+// Get current directory in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // Check if the problematic directory exists
 const problematicDir = join('.next', 'server', 'app', '(root)');

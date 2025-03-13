@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node build.js",
+    "postbuild": "node build.mjs",
     "start": "next start",
     "lint": "next lint"
   },
