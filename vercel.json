@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "cd fillup-io && npm install && npm run vercel-build",
-  "outputDirectory": "fillup-io/.next",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
   "framework": "nextjs",
   "cleanUrls": true,
   "env": {
